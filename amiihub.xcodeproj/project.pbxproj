@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		EFD82B7B5302848D7D562AC0 /* Pods_amiihub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C35D13147C7B38BA6B5E5D /* Pods_amiihub.framework */; };
-		FDB2CB3221E6194200802B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2CB3121E6194200802B87 /* AppDelegate.swift */; };
 		FDB2CB3421E6194200802B87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2CB3321E6194200802B87 /* ViewController.swift */; };
 		FDB2CB3721E6194300802B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB2CB3521E6194300802B87 /* Main.storyboard */; };
 		FDB2CB3921E6194500802B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB2CB3821E6194500802B87 /* Assets.xcassets */; };
 		FDB2CB3C21E6194500802B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB2CB3A21E6194500802B87 /* LaunchScreen.storyboard */; };
+		FDB2CB4B21E61F9900802B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2CB4A21E61F9900802B87 /* AppDelegate.swift */; };
+		FDB2CB4F21E620C000802B87 /* LibsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2CB4E21E620C000802B87 /* LibsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,13 @@
 		71C35D13147C7B38BA6B5E5D /* Pods_amiihub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amiihub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E3DFAB529656F131630F9CB /* Pods-amiihub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amiihub.debug.xcconfig"; path = "Target Support Files/Pods-amiihub/Pods-amiihub.debug.xcconfig"; sourceTree = "<group>"; };
 		FDB2CB2E21E6194200802B87 /* amiihub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amiihub.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDB2CB3121E6194200802B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB2CB3321E6194200802B87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FDB2CB3621E6194300802B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDB2CB3821E6194500802B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDB2CB3B21E6194500802B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDB2CB3D21E6194500802B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB2CB4A21E61F9900802B87 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDB2CB4E21E620C000802B87 /* LibsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,6 @@
 				9E3DFAB529656F131630F9CB /* Pods-amiihub.debug.xcconfig */,
 				68F4747030C1D82C7D506549 /* Pods-amiihub.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,14 +80,55 @@
 		FDB2CB3021E6194200802B87 /* amiihub */ = {
 			isa = PBXGroup;
 			children = (
-				FDB2CB3121E6194200802B87 /* AppDelegate.swift */,
-				FDB2CB3321E6194200802B87 /* ViewController.swift */,
-				FDB2CB3521E6194300802B87 /* Main.storyboard */,
-				FDB2CB3821E6194500802B87 /* Assets.xcassets */,
-				FDB2CB3A21E6194500802B87 /* LaunchScreen.storyboard */,
-				FDB2CB3D21E6194500802B87 /* Info.plist */,
+				FDB2CB4721E61F7400802B87 /* Application */,
+				FDB2CB4D21E6209800802B87 /* Managers */,
+				FDB2CB5021E6227E00802B87 /* Modules */,
+				FDB2CB4C21E61FBF00802B87 /* Resources */,
 			);
 			path = amiihub;
+			sourceTree = "<group>";
+		};
+		FDB2CB4721E61F7400802B87 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FDB2CB4A21E61F9900802B87 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FDB2CB4C21E61FBF00802B87 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FDB2CB3821E6194500802B87 /* Assets.xcassets */,
+				FDB2CB3D21E6194500802B87 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FDB2CB4D21E6209800802B87 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FDB2CB4E21E620C000802B87 /* LibsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FDB2CB5021E6227E00802B87 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FDB2CB5121E6229E00802B87 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FDB2CB5121E6229E00802B87 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FDB2CB3A21E6194500802B87 /* LaunchScreen.storyboard */,
+				FDB2CB3521E6194300802B87 /* Main.storyboard */,
+				FDB2CB3321E6194200802B87 /* ViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +142,7 @@
 				FDB2CB2A21E6194200802B87 /* Sources */,
 				FDB2CB2B21E6194200802B87 /* Frameworks */,
 				FDB2CB2C21E6194200802B87 /* Resources */,
+				BAFD88E99CCD607D8337C8C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +222,68 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BAFD88E99CCD607D8337C8C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-amiihub/Pods-amiihub-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTheme/RxTheme.framework",
+				"${BUILT_PRODUCTS_DIR}/RxViewController/RxViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTheme.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-amiihub/Pods-amiihub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -186,8 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB2CB4B21E61F9900802B87 /* AppDelegate.swift in Sources */,
+				FDB2CB4F21E620C000802B87 /* LibsManager.swift in Sources */,
 				FDB2CB3421E6194200802B87 /* ViewController.swift in Sources */,
-				FDB2CB3221E6194200802B87 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +442,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V76HB5TB44;
-				INFOPLIST_FILE = amiihub/Info.plist;
+				INFOPLIST_FILE = amiihub/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,7 +462,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V76HB5TB44;
-				INFOPLIST_FILE = amiihub/Info.plist;
+				INFOPLIST_FILE = amiihub/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
