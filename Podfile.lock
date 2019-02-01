@@ -4,7 +4,19 @@ PODS:
   - CocoaLumberjack/Swift (3.4.2):
     - CocoaLumberjack/Default
   - Differentiator (3.1.0)
+  - DZNEmptyDataSet (1.8.1)
+  - Hero (1.4.0)
   - Kingfisher (4.10.1)
+  - Localize-Swift (2.0.0)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya-ObjectMapper/Core (2.8):
+    - Moya (~> 12.0)
+    - ObjectMapper (~> 3.4)
+  - Moya-ObjectMapper/RxSwift (2.8):
+    - Moya-ObjectMapper/Core
+    - Moya/RxSwift
+    - RxSwift (~> 4)
   - Moya/Core (12.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.0)
@@ -13,9 +25,11 @@ PODS:
     - RxSwift (~> 4.0)
   - "NSObject+Rx (4.4.1)":
     - RxSwift (~> 4.3)
+  - ObjectMapper (3.4.2)
   - R.swift (5.0.0):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.0)
+  - RAMAnimatedTabBarController (4.0.1)
   - ReachabilitySwift (4.3.0)
   - Result (4.0.0)
   - RxAtomic (4.4.0)
@@ -48,6 +62,9 @@ PODS:
     - RxCocoa (>= 4.0.0)
     - RxSwift (>= 4.0.0)
   - SnapKit (4.2.0)
+  - SQLite.swift (0.11.5):
+    - SQLite.swift/standard (= 0.11.5)
+  - SQLite.swift/standard (0.11.5)
   - SwifterSwift (4.6.0):
     - SwifterSwift/AppKit (= 4.6.0)
     - SwifterSwift/CoreGraphics (= 4.6.0)
@@ -66,14 +83,18 @@ PODS:
   - SwifterSwift/SwiftStdlib (4.6.0)
   - SwifterSwift/UIKit (4.6.0)
   - SwiftLint (0.29.2)
-  - YYText (1.0.7)
 
 DEPENDENCIES:
   - CocoaLumberjack/Swift (~> 3.0)
+  - DZNEmptyDataSet (~> 1.0)
+  - Hero (~> 1.4.0)
   - Kingfisher (~> 4.0)
+  - Localize-Swift (~> 2.0)
+  - Moya-ObjectMapper/RxSwift
   - Moya/RxSwift (~> 12.0)
   - "NSObject+Rx (~> 4.0)"
   - R.swift (~> 5.0.0)
+  - RAMAnimatedTabBarController (~> 4.0.1)
   - ReachabilitySwift (~> 4.0)
   - RxDataSources (~> 3.0)
   - RxGesture (~> 2.0)
@@ -82,20 +103,26 @@ DEPENDENCIES:
   - RxTheme (~> 2.0)
   - RxViewController (~> 0.3)
   - SnapKit (~> 4.0)
+  - SQLite.swift (~> 0.11.5)
   - SwifterSwift
   - SwiftLint (= 0.29.2)
-  - YYText
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - CocoaLumberjack
     - Differentiator
+    - DZNEmptyDataSet
+    - Hero
     - Kingfisher
+    - Localize-Swift
     - Moya
+    - Moya-ObjectMapper
     - "NSObject+Rx"
+    - ObjectMapper
     - R.swift
     - R.swift.Library
+    - RAMAnimatedTabBarController
     - ReachabilitySwift
     - Result
     - RxAtomic
@@ -108,19 +135,25 @@ SPEC REPOS:
     - RxTheme
     - RxViewController
     - SnapKit
+    - SQLite.swift
     - SwifterSwift
     - SwiftLint
-    - YYText
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  Moya-ObjectMapper: c514b5eafcfd5e260f85f7a5bf66895a217e2b37
   "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   R.swift: f88c7d7d48a2be4dffa132dde1b3d389620310eb
   R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
+  RAMAnimatedTabBarController: 677d6f7ec7e88b1089486f4db49b0a5067e8ad1c
   ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
@@ -133,10 +166,10 @@ SPEC CHECKSUMS:
   RxTheme: b58ac61b7062d5a6215d53653a18c2f18f8015a0
   RxViewController: 359bbc2fda373a78605b2735afb0f9f4f3f6c3e4
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
   SwifterSwift: 812ffec6f301922f5430e75be3f2939ea3a80024
   SwiftLint: 47df60bdea6e7e902b193b6596db8683aafd86a3
-  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 5b62da0c217854b6adeb712f282620a6b3ce4d21
+PODFILE CHECKSUM: 4d9a59a0f11b89c9c32a6a7c86f99bec8e066958
 
 COCOAPODS: 1.6.0.beta.2

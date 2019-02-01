@@ -8,13 +8,14 @@
 
 import Foundation
 import SnapKit
+import RxSwiftExt
 
 /// The manager class for configuring all libraries used in app.
 class LibsManager {
-    
+
     /// The default singleton instance.
     static let shared = LibsManager()
-    
+
     func setupLibs(with window: UIWindow? = nil) {
         let libsManager = LibsManager.shared
     }

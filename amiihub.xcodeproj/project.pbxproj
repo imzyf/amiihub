@@ -8,12 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		EFD82B7B5302848D7D562AC0 /* Pods_amiihub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C35D13147C7B38BA6B5E5D /* Pods_amiihub.framework */; };
-		FDB2CB3421E6194200802B87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2CB3321E6194200802B87 /* ViewController.swift */; };
+		FDB2CB3421E6194200802B87 /* AmiiboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2CB3321E6194200802B87 /* AmiiboViewController.swift */; };
 		FDB2CB3721E6194300802B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB2CB3521E6194300802B87 /* Main.storyboard */; };
 		FDB2CB3921E6194500802B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB2CB3821E6194500802B87 /* Assets.xcassets */; };
 		FDB2CB3C21E6194500802B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB2CB3A21E6194500802B87 /* LaunchScreen.storyboard */; };
 		FDB2CB4B21E61F9900802B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2CB4A21E61F9900802B87 /* AppDelegate.swift */; };
 		FDB2CB4F21E620C000802B87 /* LibsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2CB4E21E620C000802B87 /* LibsManager.swift */; };
+		FDCB03F02203E13D00D0BB1D /* AmiiboAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB03EF2203E13D00D0BB1D /* AmiiboAPI.swift */; };
+		FDCB03F32203E29200D0BB1D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB03F22203E29200D0BB1D /* Config.swift */; };
+		FDCB03F52203E5FB00D0BB1D /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB03F42203E5FB00D0BB1D /* Api.swift */; };
+		FDCB03F82203E68200D0BB1D /* Amiibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB03F72203E68200D0BB1D /* Amiibo.swift */; };
+		FDCB03FA2203E9A900D0BB1D /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB03F92203E9A900D0BB1D /* Networking.swift */; };
+		FDCB03FC2203EF2B00D0BB1D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB03FB2203EF2B00D0BB1D /* Reachability.swift */; };
+		FDCB04002203F37F00D0BB1D /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB03FF2203F37F00D0BB1D /* LogManager.swift */; };
+		FDCB0402220418A000D0BB1D /* HomeTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB0401220418A000D0BB1D /* HomeTabBarViewModel.swift */; };
+		FDCB0404220418DF00D0BB1D /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB0403220418DF00D0BB1D /* HomeTabBarController.swift */; };
+		FDCB040722041BF400D0BB1D /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB040622041BF400D0BB1D /* ViewModelType.swift */; };
+		FDCB040D22041C8200D0BB1D /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB040A22041C8200D0BB1D /* ErrorTracker.swift */; };
+		FDCB040E22041C8200D0BB1D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB040C22041C8200D0BB1D /* ActivityIndicator.swift */; };
+		FDCB041022041D1900D0BB1D /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB040F22041D1900D0BB1D /* ErrorResponse.swift */; };
+		FDCB041222041EB000D0BB1D /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB041122041EB000D0BB1D /* NavigationController.swift */; };
+		FDCB042422041FA500D0BB1D /* UIImage+SwiftHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB041522041FA500D0BB1D /* UIImage+SwiftHub.swift */; };
+		FDCB042522041FA500D0BB1D /* UIColor+SwiftHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB041722041FA500D0BB1D /* UIColor+SwiftHub.swift */; };
+		FDCB042622041FA500D0BB1D /* UIView+Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB041922041FA500D0BB1D /* UIView+Borders.swift */; };
+		FDCB042722041FA500D0BB1D /* UIView+SwiftHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB041A22041FA500D0BB1D /* UIView+SwiftHub.swift */; };
+		FDCB042922041FA500D0BB1D /* Kingfisher+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB041D22041FA500D0BB1D /* Kingfisher+Rx.swift */; };
+		FDCB042A22041FA500D0BB1D /* Observable+Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB041E22041FA500D0BB1D /* Observable+Logging.swift */; };
+		FDCB042B22041FA500D0BB1D /* Observable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB041F22041FA500D0BB1D /* Observable+Operators.swift */; };
+		FDCB042C22041FA500D0BB1D /* UIFont+SwiftHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB042122041FA500D0BB1D /* UIFont+SwiftHub.swift */; };
+		FDCB042D22041FA500D0BB1D /* Foundation+SwiftHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB042322041FA500D0BB1D /* Foundation+SwiftHub.swift */; };
+		FDCB04332204244A00D0BB1D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB04322204244A00D0BB1D /* R.generated.swift */; };
+		FDCB04362204272E00D0BB1D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = FDCB04342204272E00D0BB1D /* .swiftlint.yml */; };
+		FDCB04372204272E00D0BB1D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FDCB04352204272E00D0BB1D /* .gitignore */; };
+		FDFBADF221F07A0C00F257CE /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFBADF121F07A0C00F257CE /* Application.swift */; };
+		FDFBADF421F07A6D00F257CE /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFBADF321F07A6C00F257CE /* Navigator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +49,41 @@
 		71C35D13147C7B38BA6B5E5D /* Pods_amiihub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amiihub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E3DFAB529656F131630F9CB /* Pods-amiihub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amiihub.debug.xcconfig"; path = "Target Support Files/Pods-amiihub/Pods-amiihub.debug.xcconfig"; sourceTree = "<group>"; };
 		FDB2CB2E21E6194200802B87 /* amiihub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amiihub.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDB2CB3321E6194200802B87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDB2CB3321E6194200802B87 /* AmiiboViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboViewController.swift; sourceTree = "<group>"; };
 		FDB2CB3621E6194300802B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDB2CB3821E6194500802B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDB2CB3B21E6194500802B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDB2CB3D21E6194500802B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDB2CB4A21E61F9900802B87 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB2CB4E21E620C000802B87 /* LibsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibsManager.swift; sourceTree = "<group>"; };
+		FDCB03EF2203E13D00D0BB1D /* AmiiboAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboAPI.swift; sourceTree = "<group>"; };
+		FDCB03F22203E29200D0BB1D /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		FDCB03F42203E5FB00D0BB1D /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		FDCB03F72203E68200D0BB1D /* Amiibo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amiibo.swift; sourceTree = "<group>"; };
+		FDCB03F92203E9A900D0BB1D /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		FDCB03FB2203EF2B00D0BB1D /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		FDCB03FF2203F37F00D0BB1D /* LogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogManager.swift; path = ../../../SwiftHub/SwiftHub/Managers/LogManager.swift; sourceTree = "<group>"; };
+		FDCB0401220418A000D0BB1D /* HomeTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewModel.swift; sourceTree = "<group>"; };
+		FDCB0403220418DF00D0BB1D /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		FDCB040622041BF400D0BB1D /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		FDCB040A22041C8200D0BB1D /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		FDCB040C22041C8200D0BB1D /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		FDCB040F22041D1900D0BB1D /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		FDCB041122041EB000D0BB1D /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		FDCB041522041FA500D0BB1D /* UIImage+SwiftHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+SwiftHub.swift"; sourceTree = "<group>"; };
+		FDCB041722041FA500D0BB1D /* UIColor+SwiftHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SwiftHub.swift"; sourceTree = "<group>"; };
+		FDCB041922041FA500D0BB1D /* UIView+Borders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Borders.swift"; sourceTree = "<group>"; };
+		FDCB041A22041FA500D0BB1D /* UIView+SwiftHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SwiftHub.swift"; sourceTree = "<group>"; };
+		FDCB041D22041FA500D0BB1D /* Kingfisher+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Kingfisher+Rx.swift"; sourceTree = "<group>"; };
+		FDCB041E22041FA500D0BB1D /* Observable+Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Logging.swift"; sourceTree = "<group>"; };
+		FDCB041F22041FA500D0BB1D /* Observable+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Operators.swift"; sourceTree = "<group>"; };
+		FDCB042122041FA500D0BB1D /* UIFont+SwiftHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+SwiftHub.swift"; sourceTree = "<group>"; };
+		FDCB042322041FA500D0BB1D /* Foundation+SwiftHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Foundation+SwiftHub.swift"; sourceTree = "<group>"; };
+		FDCB04322204244A00D0BB1D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		FDCB04342204272E00D0BB1D /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		FDCB04352204272E00D0BB1D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		FDFBADF121F07A0C00F257CE /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		FDFBADF321F07A6C00F257CE /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +137,15 @@
 			isa = PBXGroup;
 			children = (
 				FDB2CB4721E61F7400802B87 /* Application */,
+				FDFBADF621F07F4A00F257CE /* Common */,
+				FDCB03F12203E26F00D0BB1D /* Config */,
 				FDB2CB4D21E6209800802B87 /* Managers */,
+				FDCB041322041FA500D0BB1D /* Extensions */,
+				FDCB03F62203E65500D0BB1D /* Models */,
 				FDB2CB5021E6227E00802B87 /* Modules */,
+				FDFBADF521F07AF500F257CE /* Networking */,
 				FDB2CB4C21E61FBF00802B87 /* Resources */,
+				FDCB040822041C8200D0BB1D /* Third Party */,
 			);
 			path = amiihub;
 			sourceTree = "<group>";
@@ -92,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				FDB2CB4A21E61F9900802B87 /* AppDelegate.swift */,
+				FDFBADF121F07A0C00F257CE /* Application.swift */,
+				FDFBADF321F07A6C00F257CE /* Navigator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -99,6 +163,7 @@
 		FDB2CB4C21E61FBF00802B87 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FDCB04322204244A00D0BB1D /* R.generated.swift */,
 				FDB2CB3821E6194500802B87 /* Assets.xcassets */,
 				FDB2CB3D21E6194500802B87 /* Info.plist */,
 			);
@@ -109,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				FDB2CB4E21E620C000802B87 /* LibsManager.swift */,
+				FDCB03FF2203F37F00D0BB1D /* LogManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -116,6 +182,7 @@
 		FDB2CB5021E6227E00802B87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FDCB042E220421ED00D0BB1D /* Amiibo */,
 				FDB2CB5121E6229E00802B87 /* Main */,
 			);
 			path = Modules;
@@ -124,11 +191,148 @@
 		FDB2CB5121E6229E00802B87 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				FDCB0403220418DF00D0BB1D /* HomeTabBarController.swift */,
+				FDCB0401220418A000D0BB1D /* HomeTabBarViewModel.swift */,
 				FDB2CB3A21E6194500802B87 /* LaunchScreen.storyboard */,
 				FDB2CB3521E6194300802B87 /* Main.storyboard */,
-				FDB2CB3321E6194200802B87 /* ViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		FDCB03F12203E26F00D0BB1D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FDCB04352204272E00D0BB1D /* .gitignore */,
+				FDCB04342204272E00D0BB1D /* .swiftlint.yml */,
+				FDCB03F22203E29200D0BB1D /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		FDCB03F62203E65500D0BB1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDCB03F72203E68200D0BB1D /* Amiibo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FDCB040822041C8200D0BB1D /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				FDCB040922041C8200D0BB1D /* RxErrorTracker */,
+				FDCB040B22041C8200D0BB1D /* RxActivityIndicator */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+		FDCB040922041C8200D0BB1D /* RxErrorTracker */ = {
+			isa = PBXGroup;
+			children = (
+				FDCB040A22041C8200D0BB1D /* ErrorTracker.swift */,
+			);
+			path = RxErrorTracker;
+			sourceTree = "<group>";
+		};
+		FDCB040B22041C8200D0BB1D /* RxActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				FDCB040C22041C8200D0BB1D /* ActivityIndicator.swift */,
+			);
+			path = RxActivityIndicator;
+			sourceTree = "<group>";
+		};
+		FDCB041322041FA500D0BB1D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FDCB041422041FA500D0BB1D /* UIImage */,
+				FDCB041622041FA500D0BB1D /* UIColor */,
+				FDCB041822041FA500D0BB1D /* UIView */,
+				FDCB041B22041FA500D0BB1D /* RxSwift */,
+				FDCB042022041FA500D0BB1D /* UIFont */,
+				FDCB042222041FA500D0BB1D /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FDCB041422041FA500D0BB1D /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				FDCB041522041FA500D0BB1D /* UIImage+SwiftHub.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		FDCB041622041FA500D0BB1D /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				FDCB041722041FA500D0BB1D /* UIColor+SwiftHub.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		FDCB041822041FA500D0BB1D /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				FDCB041922041FA500D0BB1D /* UIView+Borders.swift */,
+				FDCB041A22041FA500D0BB1D /* UIView+SwiftHub.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		FDCB041B22041FA500D0BB1D /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				FDCB041D22041FA500D0BB1D /* Kingfisher+Rx.swift */,
+				FDCB041E22041FA500D0BB1D /* Observable+Logging.swift */,
+				FDCB041F22041FA500D0BB1D /* Observable+Operators.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		FDCB042022041FA500D0BB1D /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				FDCB042122041FA500D0BB1D /* UIFont+SwiftHub.swift */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		FDCB042222041FA500D0BB1D /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				FDCB042322041FA500D0BB1D /* Foundation+SwiftHub.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		FDCB042E220421ED00D0BB1D /* Amiibo */ = {
+			isa = PBXGroup;
+			children = (
+				FDB2CB3321E6194200802B87 /* AmiiboViewController.swift */,
+			);
+			path = Amiibo;
+			sourceTree = "<group>";
+		};
+		FDFBADF521F07AF500F257CE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FDCB03EF2203E13D00D0BB1D /* AmiiboAPI.swift */,
+				FDCB040F22041D1900D0BB1D /* ErrorResponse.swift */,
+				FDCB03F42203E5FB00D0BB1D /* Api.swift */,
+				FDCB03F92203E9A900D0BB1D /* Networking.swift */,
+				FDCB03FB2203EF2B00D0BB1D /* Reachability.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		FDFBADF621F07F4A00F257CE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FDCB041122041EB000D0BB1D /* NavigationController.swift */,
+				FDCB040622041BF400D0BB1D /* ViewModelType.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +343,7 @@
 			buildConfigurationList = FDB2CB4021E6194500802B87 /* Build configuration list for PBXNativeTarget "amiihub" */;
 			buildPhases = (
 				917DDC1256C31658A7E4368A /* [CP] Check Pods Manifest.lock */,
+				FDCB042F220423DC00D0BB1D /* R.swift */,
 				FDB2CB2A21E6194200802B87 /* Sources */,
 				FDB2CB2B21E6194200802B87 /* Frameworks */,
 				FDB2CB2C21E6194200802B87 /* Resources */,
@@ -191,6 +396,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDCB04372204272E00D0BB1D /* .gitignore in Resources */,
+				FDCB04362204272E00D0BB1D /* .swiftlint.yml in Resources */,
 				FDB2CB3C21E6194500802B87 /* LaunchScreen.storyboard in Resources */,
 				FDB2CB3921E6194500802B87 /* Assets.xcassets in Resources */,
 				FDB2CB3721E6194300802B87 /* Main.storyboard in Resources */,
@@ -233,11 +440,17 @@
 				"${PODS_ROOT}/Target Support Files/Pods-amiihub/Pods-amiihub-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
@@ -249,9 +462,9 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTheme/RxTheme.framework",
 				"${BUILT_PRODUCTS_DIR}/RxViewController/RxViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -259,11 +472,17 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
@@ -275,14 +494,34 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTheme.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-amiihub/Pods-amiihub-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		FDCB042F220423DC00D0BB1D /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/amiihub/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/amiihub/Resources/R.generated.swift\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -291,9 +530,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDCB04002203F37F00D0BB1D /* LogManager.swift in Sources */,
+				FDCB03F82203E68200D0BB1D /* Amiibo.swift in Sources */,
+				FDCB042522041FA500D0BB1D /* UIColor+SwiftHub.swift in Sources */,
+				FDCB042922041FA500D0BB1D /* Kingfisher+Rx.swift in Sources */,
+				FDCB0404220418DF00D0BB1D /* HomeTabBarController.swift in Sources */,
+				FDCB040D22041C8200D0BB1D /* ErrorTracker.swift in Sources */,
+				FDCB03FA2203E9A900D0BB1D /* Networking.swift in Sources */,
+				FDCB042622041FA500D0BB1D /* UIView+Borders.swift in Sources */,
+				FDCB042B22041FA500D0BB1D /* Observable+Operators.swift in Sources */,
+				FDCB042422041FA500D0BB1D /* UIImage+SwiftHub.swift in Sources */,
+				FDFBADF221F07A0C00F257CE /* Application.swift in Sources */,
+				FDCB04332204244A00D0BB1D /* R.generated.swift in Sources */,
+				FDFBADF421F07A6D00F257CE /* Navigator.swift in Sources */,
 				FDB2CB4B21E61F9900802B87 /* AppDelegate.swift in Sources */,
+				FDCB03F32203E29200D0BB1D /* Config.swift in Sources */,
+				FDCB040722041BF400D0BB1D /* ViewModelType.swift in Sources */,
+				FDCB0402220418A000D0BB1D /* HomeTabBarViewModel.swift in Sources */,
 				FDB2CB4F21E620C000802B87 /* LibsManager.swift in Sources */,
-				FDB2CB3421E6194200802B87 /* ViewController.swift in Sources */,
+				FDCB042722041FA500D0BB1D /* UIView+SwiftHub.swift in Sources */,
+				FDCB041222041EB000D0BB1D /* NavigationController.swift in Sources */,
+				FDCB03FC2203EF2B00D0BB1D /* Reachability.swift in Sources */,
+				FDCB042C22041FA500D0BB1D /* UIFont+SwiftHub.swift in Sources */,
+				FDCB042D22041FA500D0BB1D /* Foundation+SwiftHub.swift in Sources */,
+				FDB2CB3421E6194200802B87 /* AmiiboViewController.swift in Sources */,
+				FDCB03F52203E5FB00D0BB1D /* Api.swift in Sources */,
+				FDCB042A22041FA500D0BB1D /* Observable+Logging.swift in Sources */,
+				FDCB041022041D1900D0BB1D /* ErrorResponse.swift in Sources */,
+				FDCB03F02203E13D00D0BB1D /* AmiiboAPI.swift in Sources */,
+				FDCB040E22041C8200D0BB1D /* ActivityIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
