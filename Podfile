@@ -30,10 +30,12 @@ target 'amiihub' do
   pod 'Kingfisher', '~> 4.0'  # https://github.com/onevcat/Kingfisher
   
   # UI
+  pod 'NVActivityIndicatorView', '~> 4.0'  # https://github.com/ninjaprox/NVActivityIndicatorView
   pod 'Hero', '~> 1.4.0'  # https://github.com/lkzhao/Hero
   pod 'DZNEmptyDataSet', '~> 1.0'  # https://github.com/dzenbot/DZNEmptyDataSet
   pod 'Localize-Swift', '~> 2.0'  # https://github.com/marmelroy/Localize-Swift
   pod 'RAMAnimatedTabBarController', '~> 4.0.1'  # https://github.com/Ramotion/animated-tab-bar
+  pod 'KafkaRefresh', '~> 1.0'  # https://github.com/OpenFeyn/KafkaRefresh
   
   # Auto Layout
   pod 'SnapKit', '~> 4.0'  # https://github.com/SnapKit/SnapKit

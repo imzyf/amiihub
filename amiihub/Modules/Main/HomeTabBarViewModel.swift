@@ -11,10 +11,9 @@ import RxCocoa
 import RxSwift
 import RAMAnimatedTabBarController
 
-class HomeTabBarViewModel: ViewModel, ViewModelType {
-
+class HomeTabBarViewModel: ViewModel {
+ 
     struct Input {
-        let whatsNewTrigger: Observable<Void>
     }
 
     struct Output {

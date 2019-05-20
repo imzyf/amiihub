@@ -1,9 +1,9 @@
 //
 //  ViewModelType.swift
-//  amiihub
+//  SwiftHub
 //
-//  Created by  moma on 2019/2/1.
-//  Copyright © 2019 imzyf. All rights reserved.
+//  Created by Khoren Markosyan on 6/30/18.
+//  Copyright © 2018 Khoren Markosyan. All rights reserved.
 //
 
 import Foundation
@@ -20,7 +20,7 @@ protocol ViewModelType {
 
 class ViewModel: NSObject {
 
-    let provider: AmiiHubAPI
+    let provider: SwiftHubAPI
 
     var page = 1
 
@@ -31,10 +31,26 @@ class ViewModel: NSObject {
     let error = ErrorTracker()
     let parsedError = PublishSubject<ApiError>()
 
-    init(provider: AmiiHubAPI) {
+    init(provider: SwiftHubAPI) {
         self.provider = provider
         super.init()
 
+        error.asObservable().map { (error) -> ApiError? in
+            do {
+                let errorResponse = error as? MoyaError
+                if let body = try errorResponse?.response?.mapJSON() as? [String: Any],
+                    let errorResponse = Mapper<ErrorResponse>().map(JSON: body) {
+                    return ApiError.serverError(response: errorResponse)
+                }
+            } catch {
+                print(error)
+            }
+            return nil
+        }.filterNil().bind(to: parsedError).disposed(by: rx.disposeBag)
+
+        error.asDriver().drive(onNext: { (error) in
+            logError("\(error)")
+        }).disposed(by: rx.disposeBag)
     }
 
     deinit {

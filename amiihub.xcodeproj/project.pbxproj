@@ -23,7 +23,6 @@
 		FDCB04002203F37F00D0BB1D /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB03FF2203F37F00D0BB1D /* LogManager.swift */; };
 		FDCB0402220418A000D0BB1D /* HomeTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB0401220418A000D0BB1D /* HomeTabBarViewModel.swift */; };
 		FDCB0404220418DF00D0BB1D /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB0403220418DF00D0BB1D /* HomeTabBarController.swift */; };
-		FDCB040722041BF400D0BB1D /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB040622041BF400D0BB1D /* ViewModelType.swift */; };
 		FDCB040D22041C8200D0BB1D /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB040A22041C8200D0BB1D /* ErrorTracker.swift */; };
 		FDCB040E22041C8200D0BB1D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB040C22041C8200D0BB1D /* ActivityIndicator.swift */; };
 		FDCB041022041D1900D0BB1D /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB040F22041D1900D0BB1D /* ErrorResponse.swift */; };
@@ -40,6 +39,14 @@
 		FDCB04332204244A00D0BB1D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB04322204244A00D0BB1D /* R.generated.swift */; };
 		FDCB04362204272E00D0BB1D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = FDCB04342204272E00D0BB1D /* .swiftlint.yml */; };
 		FDCB04372204272E00D0BB1D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FDCB04352204272E00D0BB1D /* .gitignore */; };
+		FDCB044122042C6900D0BB1D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB043822042C6900D0BB1D /* TableViewController.swift */; };
+		FDCB044222042C6900D0BB1D /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB043922042C6900D0BB1D /* TableView.swift */; };
+		FDCB044322042C6900D0BB1D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB043B22042C6900D0BB1D /* TableViewCell.swift */; };
+		FDCB044422042C6900D0BB1D /* DetailedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB043C22042C6900D0BB1D /* DetailedTableViewCell.swift */; };
+		FDCB044522042C6900D0BB1D /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB043D22042C6900D0BB1D /* DefaultTableViewCell.swift */; };
+		FDCB044622042C6900D0BB1D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB043E22042C6900D0BB1D /* View.swift */; };
+		FDCB044722042C6900D0BB1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB043F22042C6900D0BB1D /* ViewController.swift */; };
+		FDCB044A22042CAB00D0BB1D /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCB044922042CAB00D0BB1D /* ViewModelType.swift */; };
 		FDFBADF221F07A0C00F257CE /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFBADF121F07A0C00F257CE /* Application.swift */; };
 		FDFBADF421F07A6D00F257CE /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFBADF321F07A6C00F257CE /* Navigator.swift */; };
 /* End PBXBuildFile section */
@@ -65,7 +72,6 @@
 		FDCB03FF2203F37F00D0BB1D /* LogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogManager.swift; path = ../../../SwiftHub/SwiftHub/Managers/LogManager.swift; sourceTree = "<group>"; };
 		FDCB0401220418A000D0BB1D /* HomeTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewModel.swift; sourceTree = "<group>"; };
 		FDCB0403220418DF00D0BB1D /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
-		FDCB040622041BF400D0BB1D /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		FDCB040A22041C8200D0BB1D /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
 		FDCB040C22041C8200D0BB1D /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		FDCB040F22041D1900D0BB1D /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
@@ -82,6 +88,14 @@
 		FDCB04322204244A00D0BB1D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		FDCB04342204272E00D0BB1D /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		FDCB04352204272E00D0BB1D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		FDCB043822042C6900D0BB1D /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FDCB043922042C6900D0BB1D /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		FDCB043B22042C6900D0BB1D /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FDCB043C22042C6900D0BB1D /* DetailedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedTableViewCell.swift; sourceTree = "<group>"; };
+		FDCB043D22042C6900D0BB1D /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
+		FDCB043E22042C6900D0BB1D /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		FDCB043F22042C6900D0BB1D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDCB044922042CAB00D0BB1D /* ViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		FDFBADF121F07A0C00F257CE /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		FDFBADF321F07A6C00F257CE /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -314,6 +328,16 @@
 			path = Amiibo;
 			sourceTree = "<group>";
 		};
+		FDCB043A22042C6900D0BB1D /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FDCB043B22042C6900D0BB1D /* TableViewCell.swift */,
+				FDCB043C22042C6900D0BB1D /* DetailedTableViewCell.swift */,
+				FDCB043D22042C6900D0BB1D /* DefaultTableViewCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
 		FDFBADF521F07AF500F257CE /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,7 +354,12 @@
 			isa = PBXGroup;
 			children = (
 				FDCB041122041EB000D0BB1D /* NavigationController.swift */,
-				FDCB040622041BF400D0BB1D /* ViewModelType.swift */,
+				FDCB043A22042C6900D0BB1D /* Table View Cells */,
+				FDCB043922042C6900D0BB1D /* TableView.swift */,
+				FDCB043822042C6900D0BB1D /* TableViewController.swift */,
+				FDCB043E22042C6900D0BB1D /* View.swift */,
+				FDCB043F22042C6900D0BB1D /* ViewController.swift */,
+				FDCB044922042CAB00D0BB1D /* ViewModelType.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -443,11 +472,13 @@
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/KafkaRefresh/KafkaRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
@@ -475,11 +506,13 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KafkaRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
@@ -517,7 +550,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/amiihub/Resources/R.generated.swift,
+				"$SRCROOT/amiihub/Resources/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -537,15 +570,20 @@
 				FDCB0404220418DF00D0BB1D /* HomeTabBarController.swift in Sources */,
 				FDCB040D22041C8200D0BB1D /* ErrorTracker.swift in Sources */,
 				FDCB03FA2203E9A900D0BB1D /* Networking.swift in Sources */,
+				FDCB044522042C6900D0BB1D /* DefaultTableViewCell.swift in Sources */,
+				FDCB044A22042CAB00D0BB1D /* ViewModelType.swift in Sources */,
 				FDCB042622041FA500D0BB1D /* UIView+Borders.swift in Sources */,
 				FDCB042B22041FA500D0BB1D /* Observable+Operators.swift in Sources */,
 				FDCB042422041FA500D0BB1D /* UIImage+SwiftHub.swift in Sources */,
+				FDCB044422042C6900D0BB1D /* DetailedTableViewCell.swift in Sources */,
+				FDCB044622042C6900D0BB1D /* View.swift in Sources */,
 				FDFBADF221F07A0C00F257CE /* Application.swift in Sources */,
 				FDCB04332204244A00D0BB1D /* R.generated.swift in Sources */,
 				FDFBADF421F07A6D00F257CE /* Navigator.swift in Sources */,
+				FDCB044122042C6900D0BB1D /* TableViewController.swift in Sources */,
 				FDB2CB4B21E61F9900802B87 /* AppDelegate.swift in Sources */,
 				FDCB03F32203E29200D0BB1D /* Config.swift in Sources */,
-				FDCB040722041BF400D0BB1D /* ViewModelType.swift in Sources */,
+				FDCB044322042C6900D0BB1D /* TableViewCell.swift in Sources */,
 				FDCB0402220418A000D0BB1D /* HomeTabBarViewModel.swift in Sources */,
 				FDB2CB4F21E620C000802B87 /* LibsManager.swift in Sources */,
 				FDCB042722041FA500D0BB1D /* UIView+SwiftHub.swift in Sources */,
@@ -555,7 +593,9 @@
 				FDCB042D22041FA500D0BB1D /* Foundation+SwiftHub.swift in Sources */,
 				FDB2CB3421E6194200802B87 /* AmiiboViewController.swift in Sources */,
 				FDCB03F52203E5FB00D0BB1D /* Api.swift in Sources */,
+				FDCB044722042C6900D0BB1D /* ViewController.swift in Sources */,
 				FDCB042A22041FA500D0BB1D /* Observable+Logging.swift in Sources */,
+				FDCB044222042C6900D0BB1D /* TableView.swift in Sources */,
 				FDCB041022041D1900D0BB1D /* ErrorResponse.swift in Sources */,
 				FDCB03F02203E13D00D0BB1D /* AmiiboAPI.swift in Sources */,
 				FDCB040E22041C8200D0BB1D /* ActivityIndicator.swift in Sources */,

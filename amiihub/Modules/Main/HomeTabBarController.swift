@@ -9,7 +9,7 @@
 import UIKit
 import RAMAnimatedTabBarController
 
-class HomeTabBarController: UITabBarController {
+class HomeTabBarController: RAMAnimatedTabBarController {
 
     var viewModel: HomeTabBarViewModel!
 
@@ -25,7 +25,10 @@ class HomeTabBarController: UITabBarController {
         // Configure tab bar
 
         tabBar.isTranslucent = false
-
+        let vc = R.storyboard.main.amiiboViewController()!
+        let item = RAMAnimatedTabBarItem(title: "Aminib", image: nil, tag: 1)
+        vc.tabBarItem = item
+        setViewControllers([vc], animated: false)
     }
 
     func bindViewModel() {
